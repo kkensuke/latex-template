@@ -1,0 +1,1 @@
+/Users/kensuke/My Drive/app/github/programming/setting/zsh/aliases/latex.sh
