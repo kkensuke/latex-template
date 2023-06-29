@@ -5,28 +5,28 @@
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 
 
-
-
+% theme
 \usetheme{Madrid}
 \usefonttheme{professionalfonts}
 \useoutertheme[height=0cm,width=1.5cm,left]{sidebar}
 
 
-
+% frame number
 \setbeamertemplate{frametitle}{
     \nointerlineskip
     \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=0.75ex]{frametitle} % set ht
         \hspace*{1ex}\insertframetitle
         \hfill\insertframenumber/\inserttotalframenumber\hspace*{8ex}
-        % \hfill\insertframenumber/{total}\hspace*{8ex}
+        % \hfill\insertframenumber/{totalframenumber}\hspace*{8ex}
     \end{beamercolorbox}
 }
 
 
-%hides nvigation buttons at bottom
+% hides nvigation buttons at bottom
 \setbeamertemplate{navigation symbols}{}
 
 
+% Remove title and name from sidebar
 \makeatletter
 \setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
 {
@@ -54,6 +54,7 @@
 % }
 
 
+% displayed transparently
 \setbeamercovered{transparent}
 
 
@@ -64,10 +65,6 @@
 \setlength{\tabcolsep}{18pt}
 % The height of each row is set to 1.5 relative to its default height.
 \renewcommand{\arraystretch}{2.5}
-
-
-
-
 
 
 % define colors
