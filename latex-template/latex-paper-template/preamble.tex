@@ -54,53 +54,45 @@
 
 % Latin abbreviations
 % ---------------------------------------------------------------------------- %
-\newcommand{\etal}{\textit{et al.}}
-\newcommand{\eg}{\textit{e.g.}}
-\newcommand{\cf}{\textit{c.f.}}
-\newcommand{\ie}{\textit{i.e.}}
-\newcommand{\etc}{\textit{etc.}}
+\newcommand{\etal}{\text{et al.}}
+\newcommand{\eg}{\text{e.g. }}
+\newcommand{\cf}{\text{c.f. }}
+\newcommand{\ie}{\text{i.e. }}
+\newcommand{\etc}{\text{etc.}}
 % ---------------------------------------------------------------------------- %
 
 
 % math
 % ---------------------------------------------------------------------------- %
-% limit type
-\DeclareMathOperator*{\argmin}{arg~min}
-\DeclareMathOperator*{\argmax}{arg~max}
+% \mathrm capital letters
+\newcommand{\rmA}{\mathrm{A}}
+\newcommand{\rmB}{\mathrm{B}}
+\newcommand{\rmC}{\mathrm{C}}
+\newcommand{\rmD}{\mathrm{D}}
+\newcommand{\rmE}{\mathrm{E}}
+\newcommand{\rmF}{\mathrm{F}}
+\newcommand{\rmG}{\mathrm{G}}
+\newcommand{\rmH}{\mathrm{H}}
+\newcommand{\rmI}{\mathrm{I}}
+\newcommand{\rmJ}{\mathrm{J}}
+\newcommand{\rmK}{\mathrm{K}}
+\newcommand{\rmL}{\mathrm{L}}
+\newcommand{\rmM}{\mathrm{M}}
+\newcommand{\rmN}{\mathrm{N}}
+\newcommand{\rmO}{\mathrm{O}}
+\newcommand{\rmP}{\mathrm{P}}
+\newcommand{\rmQ}{\mathrm{Q}}
+\newcommand{\rmR}{\mathrm{R}}
+\newcommand{\rmS}{\mathrm{S}}
+\newcommand{\rmT}{\mathrm{T}}
+\newcommand{\rmU}{\mathrm{U}}
+\newcommand{\rmV}{\mathrm{V}}
+\newcommand{\rmW}{\mathrm{W}}
+\newcommand{\rmX}{\mathrm{X}}
+\newcommand{\rmY}{\mathrm{Y}}
+\newcommand{\rmZ}{\mathrm{Z}}
 
-% \boldsymbol
-\newcommand{\bx}{\vb*{x}}
-\newcommand{\bth}{\vb*{\theta}}
-
-% mathbb
-\newcommand{\bbA}{\mathbb{A}}
-\newcommand{\bbB}{\mathbb{B}}
-\newcommand{\bbC}{\mathbb{C}}
-\newcommand{\bbD}{\mathbb{D}}
-\newcommand{\bbE}{\mathbb{E}}
-\newcommand{\bbF}{\mathbb{F}}
-\newcommand{\bbG}{\mathbb{G}}
-\newcommand{\bbH}{\mathbb{H}}
-\newcommand{\bbI}{\mathbb{I}}
-\newcommand{\bbJ}{\mathbb{J}}
-\newcommand{\bbK}{\mathbb{K}}
-\newcommand{\bbL}{\mathbb{L}}
-\newcommand{\bbM}{\mathbb{M}}
-\newcommand{\bbN}{\mathbb{N}}
-\newcommand{\bbO}{\mathbb{O}}
-\newcommand{\bbP}{\mathbb{P}}
-\newcommand{\bbQ}{\mathbb{Q}}
-\newcommand{\bbR}{\mathbb{R}}
-\newcommand{\bbS}{\mathbb{S}}
-\newcommand{\bbT}{\mathbb{T}}
-\newcommand{\bbU}{\mathbb{U}}
-\newcommand{\bbV}{\mathbb{V}}
-\newcommand{\bbW}{\mathbb{W}}
-\newcommand{\bbX}{\mathbb{X}}
-\newcommand{\bbY}{\mathbb{Y}}
-\newcommand{\bbZ}{\mathbb{Z}}
-
-% \mathcal
+% \mathcal capital letters
 \newcommand{\calA}{\mathcal{A}}
 \newcommand{\calB}{\mathcal{B}}
 \newcommand{\calC}{\mathcal{C}}
@@ -128,26 +120,27 @@
 \newcommand{\calY}{\mathcal{Y}}
 \newcommand{\calZ}{\mathcal{Z}}
 
-% multiplicative group
-\newcommand{\Zx}{\Z^\times}
-\newcommand{\Qx}{\Q^\times}
-\newcommand{\Rx}{\R^\times}
-\newcommand{\Cx}{\C^\times}
-
-% non-negative
-\newcommand{\Znn}{\Z_{\ge0}}
-\newcommand{\Qnn}{\Q_{\ge0}}
-\newcommand{\Rnn}{\R_{\ge0}}
-
-% positive
-\newcommand{\Zpo}{\Z_{>0}}
-\newcommand{\Qpo}{\Q_{>0}}
-\newcommand{\Rpo}{\R_{>0}}
+% mathbb capital letters
+\newcommand{\bbI}{\mathbb{I}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbU}{\mathbb{U}}
 
 % mathrm
-\newcommand{\haar}{\mathrm{Haar}}
+\newcommand{\const}{\mathrm{const}}
+\newcommand{\hc}{\mathrm{h.c.}}
+\newcommand{\lhs}{\mathrm{(LHS)}}
+\newcommand{\rhs}{\mathrm{(RHS)}}
+\newcommand{\Haar}{\mathrm{Haar}}
+\newcommand{\poly}{\mathrm{poly}}
+\newcommand{\SWAP}{\mathrm{SWAP}}
 
 % MathOperator
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
 \DeclareMathOperator{\sgn}{sgn}
 \DeclareMathOperator{\sign}{sign}
 \DeclareMathOperator{\Supp}{Supp}
@@ -155,8 +148,6 @@
 \DeclareMathOperator{\E}{E}
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\Cov}{Cov}
-\DeclareMathOperator{\poly}{poly}
-\DeclareMathOperator{\SWAP}{SWAP}
 \DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\Aut}{Aut}
 \DeclareMathOperator{\End}{End}
@@ -169,15 +160,23 @@
 \newcommand{\ex}{{}^\exists}
 \newcommand{\pd}{\partial}
 \newcommand{\then}{\;\Longrightarrow\;}
+\newcommand{\vt}{\,\|\,}
+\newcommand{\T}{^\mathsf{T}}
+\newcommand{\bx}{\vb*{x}}
+\newcommand{\bth}{\vb*{\theta}}
+\newcommand{\ot}[1]{^{\otimes {#1}}}
+\newcommand{\kten}[2]{\ket{#1}\otimes\ket{#2}}
+\newcommand{\bten}[2]{\bra{#1}\otimes\bra{#2}}
+\newcommand{\memo}[1]{\textcolor{red}{(#1)}}
 % ---------------------------------------------------------------------------- %
 
 
 % physics
 % ---------------------------------------------------------------------------- %
 % matrix
-\newcommand{\paulix}{ \mqty(\pmat{1}) }
-\newcommand{\pauliy}{ \mqty(\pmat{2}) }
-\newcommand{\pauliz}{ \mqty(\pmat{3}) }
+\newcommand{\paulix}{\mqty(\pmat{1})}
+\newcommand{\pauliy}{\mqty(\pmat{2})}
+\newcommand{\pauliz}{\mqty(\pmat{3})}
 
 \newcommand{\rx}[1]{ \mqty( \cos \frac{#1}{2} & -\sin\frac{#1}{2}  \\ \sin \frac{#1}{2}  & \cos\frac{#1}{2} ) }
 \newcommand{\ry}[1]{ \mqty( \cos \frac{#1}{2} & -i\sin\frac{#1}{2} \\ i\sin \frac{#1}{2} & \cos\frac{#1}{2} ) }
@@ -188,13 +187,11 @@
 \newcommand{\sif}[2]{\sin\qty(\frac{#1}{#2})}
 \newcommand{\cof}[2]{\cos\qty(\frac{#1}{#2})}
 
-% others
+% spin
 \newcommand{\up}{\uparrow} %spin up
 \newcommand{\down}{\downarrow} %spin down
 \newcommand{\szero}{\mqty( 1 \\ 0 )} %spin zero
 \newcommand{\sone}{\mqty( 0 \\ 1 )} %spin one
-\newcommand{\kten}[2]{\ket{#1}\otimes\ket{#2}}
-\newcommand{\bten}[2]{\bra{#1}\otimes\bra{#2}}
 % ---------------------------------------------------------------------------- %
 
 % ref; https://github.com/SSoelvsten/latex-preamble-and-examples/tree/main/documents
