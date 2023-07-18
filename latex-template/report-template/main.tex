@@ -1,0 +1,22 @@
+\documentclass[12pt,dvipdfmx]{report}
+\input{preamble}
+\allowdisplaybreaks[1]
+
+\title{Title}
+\author{Albert Einstein}
+\affil{Dept.\ of Physics, The University of ~, address, city, country}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\input{sections/intro.tex}
+\input{sections/asdf.tex}
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{ref}
+\newpage
+\input{sections/appendix.tex}
+
+\end{document}
