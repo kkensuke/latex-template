@@ -1,7 +1,3 @@
-Title
-===
-<!-- Table of contents -->
+# Latex template
 
-<!-- Table of contents --># Latex template
-
-The details are described in [this page](https://kkensuke.github.io/myjb-en/pages/latex/latex.html).
+The details are described on [this page](https://kkensuke.github.io/myjb-en/pages/latex/latex.html).
