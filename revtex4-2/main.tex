@@ -3,7 +3,6 @@
 % footinbib for PRL
 
 \input{preamble}
-\allowdisplaybreaks[1]
 
 \begin{document}
 
@@ -25,7 +24,7 @@
 \date{\today}
 
 \begin{abstract}
-    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract.
+    \lipsum[1]
 \end{abstract}
 
 
@@ -37,7 +36,9 @@
 \newpage
 \bibliographystyle{abbrv}
 \bibliography{ref}
+
 \newpage
+\appendix
 \input{sections/appendix.tex}
 
 \end{document}
