@@ -1,5 +1,5 @@
 % set margins
-\usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
+\usepackage[top=25truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,hyperref,xcolor}
 % math
 \usepackage{amsmath,amsthm,amssymb,mathtools,mathrsfs}
@@ -21,6 +21,18 @@
 \usepackage{here}
 % Align table columns on decimal point
 \usepackage{dcolumn}
+% show line number
+\usepackage{lineno}
+\linenumbers % comment out to hide line number
+% make header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{}
+\cfoot{\thepage} % remove page number at the bottom
+\renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}}
+% \renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese
+% \renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}} % rightmark
 
 
 % style setting
