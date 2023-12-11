@@ -1,3 +1,3 @@
 # Latex template
 
-The details are described on [this page](https://kkensuke.github.io/myjb-en/pages/latex/latex.html).
+Latex settings page [(en)](https://kkensuke.github.io/myjb-en/pages/latex/latex.html), [(ja)](https://kkensuke.github.io/myjb-ja/pages/latex/latex.html).
