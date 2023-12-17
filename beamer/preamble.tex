@@ -176,10 +176,10 @@
 \newcommand{\pauliy}{ \mqty(\pmat{2}) }
 \newcommand{\pauliz}{ \mqty(\pmat{3}) }
 
-\newcommand{\rx}[1]{ \mqty( \cos \frac{#1}{2} & -\sin\frac{#1}{2}  \\ \sin \frac{#1}{2}  & \cos\frac{#1}{2} ) }
-\newcommand{\ry}[1]{ \mqty( \cos \frac{#1}{2} & -i\sin\frac{#1}{2} \\ i\sin \frac{#1}{2} & \cos\frac{#1}{2} ) }
-\newcommand{\rz}[1]{ \mqty( \exp -i{#1}/2      & 0                  \\ 0                 & \exp i{#1}/2     ) }
-\newcommand{\rot}[1]{ \mqty( \cos {#1} & -\sin {#1} \\ \sin {#1} & \cos {#1} ) }
+\newcommand{\rx}[1]{ \mqty[\cos \frac{#1}{2} & -i\sin\frac{#1}{2} \\ -i\sin \frac{#1}{2}& \cos\frac{#1}{2} ]}
+\newcommand{\ry}[1]{ \mqty[\cos \frac{#1}{2} & -\sin\frac{#1}{2}  \\ \sin \frac{#1}{2}  & \cos\frac{#1}{2} ]}
+\newcommand{\rz}[1]{ \mqty[e^{-i{#1}/2}      & 0                  \\ 0                  & e^{i{#1}/2}     ]}
+\newcommand{\rot}[1]{\mqty[\cos {#1}         & -\sin {#1}         \\ \sin {#1}          & \cos {#1} ]}
 
 % sin cos
 \newcommand{\sif}[2]{\sin\qty(\frac{#1}{#2})}
