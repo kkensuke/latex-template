@@ -23,6 +23,21 @@
 \usepackage{authblk}
 % url
 \usepackage{url}
+% cite
+\usepackage[
+    backend=biber, 
+    style=phys,
+    sortcites=true,
+    biblabel=brackets,
+    giveninits=true,
+    abbreviate=false,
+    block=space,
+    backref=true, backrefstyle=two,
+]{biblatex}
+% For arXiv paper, use @article instead of @misc 
+% and add "journaltitle = {{arXiv}:0000.00000 [category]},"
+% and remove "doi = {...}"
+\addbibresource{ref.bib}
 % color
 \usepackage{xcolor}
 % color links

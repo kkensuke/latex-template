@@ -18,7 +18,18 @@
                 "-kanji=utf8",
                 "%DOCFILE%"
             ]
-        }
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "--bblencoding=utf8",
+                "-u",
+                "-U",
+                "--output_safechars",
+                "%DOCFILE%"
+            ]
+        },
     ],
     "latex-workshop.latex.recipes": [
         {
@@ -36,7 +47,15 @@
                 "pbibtex",
                 "ptex2pdf",
                 "ptex2pdf",
-
+            ]
+        },
+        {
+            "name": "ptex2pdf -> biber -> ptex2pdf * 2",
+            "tools":[
+                "ptex2pdf",
+                "biber",
+                "ptex2pdf",
+                "ptex2pdf",
             ]
         },
     ],

@@ -1,5 +1,4 @@
 \documentclass[12pt,dvipdfmx]{jreport}
-
 \input{preamble}
 
 
@@ -10,24 +9,25 @@
 
 \begin{document}
 
-\newpage
-\input{chapters/0-title.tex}
-\newpage
-\input{chapters/0-abstract.tex}
-\newpage
-\tableofcontents
+% \newpage
+% \input{chapters/0-title.tex}
+% \newpage
+% \input{chapters/0-abstract.tex}
+% \newpage
+% \tableofcontents
 
 \newpage
 \input{chapters/0-symbols.tex}
 \newpage
-\pagestyle{fancy}
+% \pagestyle{fancy}
 \input{chapters/0-intro.tex}
 \newpage
 \input{chapters/1-asdf.tex}
 
 \newpage
-\bibliographystyle{unsrt}
-\bibliography{ref}
+% \bibliographystyle{unsrt}
+% \bibliography{ref}
+\printbibliography[title=参考文献] % biblatex
 
 \newpage
 \appendix
