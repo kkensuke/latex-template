@@ -152,20 +152,27 @@
 
 % others
 \renewcommand{\bar}[1]{\overline{#1}}
+\renewcommand{\th}{\theta}
 \newcommand{\combi}[2]{{}_{#1}\text{C}_{#2}}
+\newcommand{\defeq}{\coloneqq}
 \newcommand{\dg}{^\dagger}
+\newcommand{\T}{^\mathsf{T}}
+\newcommand{\prm}{^\prime}
 \newcommand{\fa}{{}^\forall}
 \newcommand{\ex}{{}^\exists}
 \newcommand{\pd}{\partial}
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}\,}
-\newcommand{\bx}{\vb*{x}}
-\newcommand{\by}{\vb*{y}}
+\newcommand{\vt}{\,\|\,}
+\newcommand{\bs}{\boldsymbol}
 \newcommand{\bth}{\vb*{\theta}}
-\newcommand{\ot}[1]{^{\otimes {#1}}}
+\newcommand{\ot}{\otimes}
+\newcommand{\otn}[1]{^{\otimes {#1}}}
 \newcommand{\kten}[2]{\ket{#1}\otimes\ket{#2}}
 \newcommand{\bten}[2]{\bra{#1}\otimes\bra{#2}}
 \newcommand{\memo}[1]{\textcolor{red}{(#1)}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}\,}
+\usepackage{dsfont}
+\newcommand{\bbid}{\mathds{1}}
 % ---------------------------------------------------------------------------- %
 
 
